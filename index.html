@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Stop watch</title>
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body class="flex justify-center items-center text-center h-screen">
+      <main class="space-y-4">
+         <h1 class="font-bold text-2xl">This is the Time</h1>
+         <div class="flex gap-2 justify-center">
+            <p id="timeMinute" class="font-bold text-2xl">00</p>
+            <span class="flex items-center font-extrabold space-x-">:</span>
+            <p id="timeSecond" class="font-bold text-2xl">00</p>
+         </div>
+         <section class="space-x-4">
+            <button
+               onclick="handleStart()"
+               class="btn btn-info btn-sm text-white"
+            >
+               STart
+            </button>
+            <button class="btn btn-info btn-sm text-white">Puse</button
+            ><button class="btn btn-info btn-sm text-white">Restart</button>
+         </section>
+      </main>
+      <script src="stopWatch.js"></script>
+   </body>
+</html>
